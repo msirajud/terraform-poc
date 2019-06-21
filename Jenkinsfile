@@ -5,20 +5,6 @@ pipeline {
 
  stages {
 
- stage(‘checkout’) {
-
- steps {
-
- git branch: 'master',
-
-    url: 'ssh://jenkins@gerrit.1dc.com:29418/EMEA/CIO/AWS/AWS-POC'
-
- 
-
- }
-
- }
-
  stage('Set Terraform path') {
 
  steps {
